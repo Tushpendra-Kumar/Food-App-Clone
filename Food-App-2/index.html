@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food App</title>
+    <link rel="stylesheet" href="/Food-App-2/index.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-text c-padding">
+          <h1 class="navbar-info">Tushu's Diner</h1>
+          <p class="navbar-tagline"> The best burgers and pizzas in town. </p>
+        </div>
+      </nav>
+      <main>
+        <div class="container">
+          <!-- Code Through JavaScript -->
+        </div>
+      
+        <!--Checkout System Here  -->
+      
+        <div class="checkout-container hidden">
+          <h2 class="cart-desc">Your Orders</h2>
+          <div class="cart-details">
+            <!-- <div class="cart-item" > 
+                              <span class="cart-item-name">Pizza</span> 
+                              <span class="remove-item">remove</span>
+                              <span class="cart-item-price">$14</span>
+                          </div> -->
+      
+          </div>
+          <div class="total-price">Total Price<span class="total-items-price">$14</span></div>
+          <button class="btn-order" id="complete-order">Compelte Order</button>
+        </div>
+      </main>
+      <div class="model">
+        <h1 class="model-header">Enter Card Details</h1>
+        <form action="" method="POST" id="myForm">
+          <input type="text" name="name" placeholder="Enetr Your Name" required />
+          <input type="text" name="cardNo" placeholder="Enetr Card No" maxlength="16" pattern="^[0-9]*$" title="Please Make Sure that Card Number is valid" required />
+          <input type="text" name="name" placeholder="Enetr CVV" maxlength="3" pattern="^[0-9]*$" title="Please Make Sure that CVV is valid" required />
+          <input type="submit" class="pay-btn" value="Pay" />
+        </form>
+      </div>
+      <script src="/Food-App-2/index.js" type="module"></script>
+</body>
+</html>
